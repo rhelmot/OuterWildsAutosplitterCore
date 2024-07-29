@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-asr = { git = "https://github.com/LiveSplit/asr", features = ["integer-vars", "unity"] }
+asr = { git = "https://github.com/LiveSplit/asr", features = ["integer-vars", "unity", "derive"] }
 bytemuck = "1.13.1"
 
 [lib]
