@@ -298,7 +298,7 @@ impl<'a> Variables<'a> {
                 return settings.first_warp;
             }
         }
-        if !sticky.warp_core && ((self.held_item.current == 2 && self.prompt_item.old == 3 && self.prompt_item.current > 3) || ((self.held_item.current == 2 && self.prompt_item.old < 4 && self.prompt_item.current == 4))) && sticky.warp_core_loop == Some(sticky.loop_counter) {
+        if settings.warp_core && !sticky.warp_core && ((self.held_item.current == 2 && self.prompt_item.old == 3 && self.prompt_item.current > 3) || ((self.held_item.current == 2 && self.prompt_item.old < 4 && self.prompt_item.current == 4))) && sticky.warp_core_loop == Some(sticky.loop_counter) {
             sticky.warp_core = true;
             return true;
         }
