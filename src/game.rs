@@ -147,7 +147,7 @@ impl State {
 }
 
 impl State {
-    pub fn update(&mut self, process: &Process, sticky: &mut StickyState) -> Option<Variables> {
+    pub fn update(&mut self, process: &Process, sticky: &mut StickyState) -> Option<Variables<'_>> {
         let mut v = Variables {
             pauses: self.pauses.update(process),
             campfire_sleep: self.campfire_sleep.update(process),
